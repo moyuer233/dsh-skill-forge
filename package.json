@@ -1,0 +1,64 @@
+{
+  "name": "dsh-skill-forge",
+  "version": "0.1.0",
+  "description": "Skill Forge for DeepSeek Harness: a left-sidebar entry and a main panel to browse, inspect, validate and scaffold skills.",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "author": {
+    "name": "MoyuStarry"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moyuer233/dsh-skill-forge.git"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "skill",
+    "skill-creator",
+    "skill-forge"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "selftest": "node test/selftest.mjs",
+    "selftest:host": "node test/host.mjs",
+    "selftest:client": "node test/client.mjs",
+    "selftest:all": "node test/run-all.mjs"
+  },
+  "files": [
+    "lib/",
+    "locale/*.json",
+    "docs/",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "test/"
+  ]
+}

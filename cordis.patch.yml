@@ -1,0 +1,7 @@
+# Skill Forge bundle patch
+#
+# 安装后向 profile 插入一行，挂载本包的 Host 半边（lib/index.js）。
+# 界面由 package.json 的 dsh.client 声明，宿主自动加载 ./client。
+- insert:
+    - id: skill-forge
+      name: 'dsh-skill-forge'

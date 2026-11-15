@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Skill Forge",
+    "description": "Browse every skill in this workspace, read its SKILL.md, validate it, and scaffold a new one from the left sidebar.",
+    "detail": "docs/DETAIL.md"
+  }
+}

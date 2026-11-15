@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "技能工坊",
+    "description": "从左侧栏进入，浏览当前工作区的全部 skill，看 SKILL.md 原文、跑格式校验、新建骨架。",
+    "detail": "docs/DETAIL.md"
+  }
+}
